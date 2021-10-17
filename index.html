@@ -1,6 +1,17 @@
 
 <html>
-	
+	<script type="text/javascript">
+		var cvs,ctx;
+		window.onload=function(){
+			cvs = document.getElementById("cvs");
+			ctx = cvs.getContext("2d");
+			var img = new Image();
+			img.src = "https://web-assets.tosconfig.com/gallery/icons/2661.jpg";
+			img.onland = function(){
+				ctx.drawImage(img,0,0,500,500);
+			}
+		}
+	</script>
 	
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -10,6 +21,6 @@
 	
 	
 	<body>
-        	<canvas id="cvs" width="800" height="600" style="border;1px solid #000000"></canvas>
+        	<canvas id="cvs" width="800" height="600" style="border=1px solid #000000"></canvas>
 	</body>
 </html>
