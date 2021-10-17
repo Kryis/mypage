@@ -3,35 +3,18 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>活動</title>
-        <link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
+	
+	<script type="text/javascript">
+		var cvs,ctx;
+		window.onload=function(){
+		cvs = document.getElementById("cvs");
+		ctx = cvs.getContext("2d");
+		
+		}
+	</script>
+	
 	<body>
-        <div class="nav">
-		    <img src="https://imgur.com/PJdFVf4.png">
-            <h1 class="title">企鵝</h1>
-        </div>
-        <div class="content">
-            <table border="1">
-                <tr>
-                    <td><img src="http://ideapit.net/filedata/201109/3k9blm20110905081644.jpg" alt="國王企鵝"></td>
-                    <td><a href="https://zh.wikipedia.org/wiki/%E5%9C%8B%E7%8E%8B%E4%BC%81%E9%B5%9D" target="_blank">這是國王企鵝</a></td>
-                </tr>
-                <tr>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Eudyptula_minor_-Canberra_Zoo,_Australia-8a.jpg" alt="小藍企鵝"></td>
-                    <td><a href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E8%97%8D%E4%BC%81%E9%B5%9D" target="_blank">這是小藍企鵝</a></td>
-                </tr>
-                <tr>
-                    <td><img src="http://farm8.staticflickr.com/7433/11463411713_0264438650_b.jpg" alt="峽灣企鵝"></td>
-                    <td><a href="https://zh.wikipedia.org/wiki/%E5%B3%BD%E7%81%A3%E4%BC%81%E9%B5%9D" target="_blank">這是峽灣企鵝</a></td>
-                </tr>
-                <tr><td colspan="2">資料來源:<a href="https://sites.google.com/site/penguin110240335109/te-zheng" target="_blank">https://sites.google.com/site/penguin110240335109/te-zheng</a></td></tr>
-            </table>
-            <form method="POST" action="test.php">
-                名字:<input type="text" name="名字"><br>
-                E-mail:<input type="text" name="email"><br>
-                <input type="submit" value="確認">
-                <input type="reset" value="清空">
-            </form>
-        </div>
+        	<canvas id="cvs" width="800" height="600" style="border;1px solid #000000"></canvas>
 	</body>
 </html>
